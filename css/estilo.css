@@ -67,9 +67,6 @@ ul.navLoc{
     display: flex;
     justify-content: center;
 }
-.caja1 p{
-    overflow: auto;
-}
 img.imgNos{
     margin: 20px ;    
 }
@@ -90,7 +87,12 @@ img.imgNos{
     left: 5px;
     z-index: 1;
 }
-.acordion{
-    justify-content: center;
-    align-items: center;
+.formulario{
+    width: 500px ;
+    margin: 20px auto;
 }
+.btnLoc:hover{
+    background-color: rgb(0, 132, 255);
+    color: rgb(255, 255, 255);
+}
+
