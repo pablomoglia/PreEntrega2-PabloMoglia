@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../multim/prism.png);
+}
+header{
+    background-color:  rgb(15, 7, 15);
+}
+.contenedor{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLogo {
+    margin: 20px;
+    width: 110px;
+    border-radius: 40%;
+    border: solid gray;
+}
+footer{
+    background-color: rgb(15, 7, 15);
+}
+.footerMenu{   
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+}
+.imgInsta{
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) ;
+}
+.imgInsta:hover{
+    opacity: 50%;
+}
+.imgFacebook{
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) ;
+}
+.imgFacebook:hover{
+    opacity: 50%;
+}
+ul.contactoFooter{
+    list-style: none;
+    font-family: 'Zilla Slab', serif;  
+    text-align: center;
+    padding: 1rem; 
+    color: aliceblue;   
+}
+ul.navLoc{
+    width: 0 auto;
+    word-wrap: normal;
+    display: flex;
+    justify-content: center;
+}
+
