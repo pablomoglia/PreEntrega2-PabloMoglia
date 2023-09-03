@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+text {
+    font-family: 'Figtree', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+h2{
+    font-family: 'Zilla Slab', serif;
+}
 body{
     background-image: url(../multim/prism.png);
 }
@@ -60,4 +67,26 @@ ul.navLoc{
     display: flex;
     justify-content: center;
 }
-
+.caja1 p{
+    overflow: auto;
+}
+img.imgNos{
+    margin: 20px ;    
+}
+.parNos{
+    font-family: 'Figtree', sans-serif;
+}
+.home img{
+    margin: 13px 50px;
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-radius: 50%;
+}
+.home{
+    position: fixed;
+    overflow: visible;
+    top: 10px;
+    left: 5px;
+    z-index: 1;
+}
