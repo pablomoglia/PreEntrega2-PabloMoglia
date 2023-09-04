@@ -95,4 +95,8 @@ img.imgNos{
     background-color: rgb(0, 132, 255);
     color: rgb(255, 255, 255);
 }
-
+.fas{
+    display: flex;
+    justify-content: center;
+    
+}
