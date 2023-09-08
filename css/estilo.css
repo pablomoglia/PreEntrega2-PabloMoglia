@@ -1,102 +1,194 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 text {
     font-family: 'Figtree', sans-serif;
     font-family: 'Zilla Slab', serif;
 }
-h2{
+
+h2 {
     font-family: 'Zilla Slab', serif;
 }
-body{
+
+body {
     background-image: url(../multim/prism.png);
 }
-header{
-    background-color:  rgb(15, 7, 15);
+
+header {
+    background-color: rgb(15, 7, 15);
 }
-.contenedor{
+
+.contenedor {
+    width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
 }
+.imageC{
+    width: 100%;
+}
+
 .headerLogo {
     margin: 20px;
     width: 110px;
     border-radius: 40%;
     border: solid gray;
 }
-footer{
+
+footer {
     background-color: rgb(15, 7, 15);
 }
-.footerMenu{   
-    list-style: none; 
+
+.footerMenu {
+    list-style: none;
     display: flex;
     justify-content: center;
 }
-.imgInsta{
+
+.imgInsta {
     margin: 5px;
     width: 40px;
     border-radius: 50%;
-    border: solid rgb(255, 255, 255) ;
+    border: solid rgb(255, 255, 255);
 }
-.imgInsta:hover{
+
+.imgInsta:hover {
     opacity: 50%;
 }
-.imgFacebook{
+
+.imgFacebook {
     margin: 5px;
     width: 40px;
     border-radius: 50%;
-    border: solid rgb(255, 255, 255) ;
+    border: solid rgb(255, 255, 255);
 }
-.imgFacebook:hover{
+
+.imgFacebook:hover {
     opacity: 50%;
 }
-ul.contactoFooter{
+
+ul.contactoFooter {
     list-style: none;
-    font-family: 'Zilla Slab', serif;  
+    font-family: 'Zilla Slab', serif;
     text-align: center;
-    padding: 1rem; 
-    color: aliceblue;   
+    padding: 1rem;
+    color: aliceblue;
 }
-ul.navLoc{
+
+ul.navLoc {
     width: 0 auto;
     word-wrap: normal;
     display: flex;
     justify-content: center;
 }
-img.imgNos{
-    margin: 20px ;    
+
+.FotoOptica{
+    margin: 90px;
+    padding: 20px;
 }
-.parNos{
+
+img.imgNos {
+    display: flex;
+    border-radius: 25%;
+    border: solid rgb(179, 179, 179);
+    justify-content: center;
+}
+
+.parNos {
     font-family: 'Figtree', sans-serif;
 }
-.home img{
+
+.home img {
     margin: 13px 50px;
     width: 50px;
     height: 50px;
     border: solid white;
     border-radius: 50%;
 }
-.home{
+
+.home {
     position: fixed;
     overflow: visible;
     top: 10px;
     left: 5px;
     z-index: 1;
 }
-.formulario{
-    width: 500px ;
+
+.formulario {
+    width: 500px;
     margin: 20px auto;
 }
-.btnLoc:hover{
+
+.btnLoc:hover {
     background-color: rgb(0, 132, 255);
     color: rgb(255, 255, 255);
 }
-.fas{
+
+.headerMenuMq{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLogoMq {    
+    margin: 20px;
+    width: 110px;
+    border-radius: 40%;
+    border: solid gray;
+}
+
+.footerMq{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul.contactoFooterMq {
+    list-style: none;
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+.footerMenuMq {
+    width: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    
+}
+
+.contenedormq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr  1.8fr 0.4fr;
+    grid-auto-columns: 1fr;
+    gap:  5px;
+    grid-auto-flow: c;
+    grid-template-areas:
+        "headerMenu headerMenu"
+        "fotoOptica textoHistoria"
+        "footer footer";
+}
+
+.headerMenuMq {
+    grid-area: headerMenu;
+
+}
+
+.fotoOptica {
+    grid-area: fotoOptica;
+}
+
+.textoHistoria {
+    grid-area: textoHistoria;
+}
+
+.footer {
+    grid-area: footerMq;
 }
