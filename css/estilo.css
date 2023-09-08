@@ -128,7 +128,6 @@ img.imgNos {
     left: 5px;
     z-index: 1;
 }
-
 .formulario {
     width: 500px;
     margin: 20px auto;
@@ -142,10 +141,10 @@ img.imgNos {
 .headerMenuMq{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.headerLogoMq {    
+.headerLogoMq {   
     margin: 20px;
     width: 110px;
     border-radius: 40%;
