@@ -16,7 +16,11 @@ body{
 header{
     background-color:  rgb(15, 7, 15);
 }
+main{
+    padding: 100px;
+}
 .contenedor{
+    width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -67,8 +71,12 @@ ul.navLoc{
     display: flex;
     justify-content: center;
 }
-img.imgNos{
-    margin: 20px ;    
+.rowLoc{
+    width: 100%;   
+}
+img.imgLoc{
+    border-radius: 45%;
+    margin: 15px;
 }
 .parNos{
     font-family: 'Figtree', sans-serif;
