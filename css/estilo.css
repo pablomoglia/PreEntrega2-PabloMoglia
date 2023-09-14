@@ -95,10 +95,6 @@ img.imgLoc{
     left: 5px;
     z-index: 1;
 }
-.formulario{
-    width: 500px ;
-    margin: 20px auto;
-}
 .btnLoc:hover{
     background-color: rgb(0, 132, 255);
     color: rgb(255, 255, 255);
