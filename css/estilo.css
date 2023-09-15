@@ -71,9 +71,7 @@ ul.navLoc{
     display: flex;
     justify-content: center;
 }
-.rowLoc{
-    width: 100%;   
-}
+
 img.imgLoc{
     border-radius: 45%;
     margin: 15px;
