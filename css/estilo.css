@@ -8,7 +8,7 @@ text {
     font-family: 'Zilla Slab', serif;
 }
 h2{
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Figtree', sans-serif;
 }
 body{
     background-image: url(../multim/prism.png);
@@ -77,7 +77,7 @@ img.imgLoc{
     margin: 15px;
 }
 .parNos{
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Zilla Slab', serif;
 }
 .home img{
     margin: 13px 50px;
@@ -99,7 +99,9 @@ img.imgLoc{
 }
 .fas{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
-
+.cardsPyA{
+    display: flex;
+    justify-content: space-around;
+}
