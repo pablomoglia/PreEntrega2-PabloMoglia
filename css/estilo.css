@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 1px wheat;
 }
 
 text {
@@ -20,6 +21,12 @@ body {
 header {
     background-color: rgb(15, 7, 15);
 }
+.headerLogo {
+    margin: 20px;
+    width: 110px;    
+    border-radius: 40%;
+    border: solid gray;
+}
 
 .contenedor {
     width: 100%;
@@ -30,13 +37,6 @@ header {
 }
 .imageC{
     width: 100%;
-}
-
-.headerLogo {
-    margin: 20px;
-    width: 110px;
-    border-radius: 40%;
-    border: solid gray;
 }
 
 footer {
@@ -86,27 +86,27 @@ ul.navLoc {
     justify-content: center;
 }
 
-.FotoOptica{
-    margin: 90px;
-    padding: 20px;
-}
-.textoHistoria{
-    align-items: center;
-    padding: 15pxpx;
-    border-radius: 5px;
 
-}
-.parrafoHistoria{
-    padding: 15px;
-    overflow: auto;
-
-}
-
-img.imgNos {
+.imgAcc {
+    width: 100%;
     display: flex;
-    border-radius: 25%;
-    border: solid rgb(179, 179, 179);
+    border-radius: 45%;
+    border: solid rgb(80, 78, 78);
     justify-content: center;
+}
+.imgLoc {
+    width: 50vw;
+    display: flex;
+    border-radius: 10%;
+    border: solid rgb(255, 255, 255);
+    justify-content: center;
+}
+.parrafoHistoria {
+    width: 50vw auto;
+    height: 350px;
+    padding: 25px;
+    overflow: auto;
+    border-radius: 5%;    
 }
 
 .parNos {
@@ -128,6 +128,7 @@ img.imgNos {
     left: 5px;
     z-index: 1;
 }
+
 .formulario {
     width: 500px;
     margin: 20px auto;
@@ -138,23 +139,20 @@ img.imgNos {
     color: rgb(255, 255, 255);
 }
 
-.headerMenuMq{
+.headerMenuMq {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.headerLogoMq {   
+.headerLogoMq {
     margin: 20px;
     width: 110px;
     border-radius: 40%;
     border: solid gray;
 }
 
-.footer.footerMq{
-    width: 100%;
-}
-.footer{
+.footer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -178,33 +176,31 @@ ul.contactoFooterMq {
     justify-content: center;
 }
 
-.contenedormq {
+.contenedorMq {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr  1.8fr 0.4fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.8fr 0.4fr;
     grid-auto-columns: 1fr;
-    gap:  20px;
+    gap: 5px;
     align-items: center;
-    grid-auto-flow: wrap;
+    grid-auto-flow: row;
     grid-template-areas:
-        "headerMenu headerMenu"
+        "headerMenuMq headerMenuMq"
         "fotoOptica textoHistoria"
         "footer footer";
 }
 
 .headerMenuMq {
     grid-area: headerMenu;
-
 }
 
 .fotoOptica {
     grid-area: fotoOptica;
+    margin: 15px;
 }
 
 .textoHistoria {
     grid-area: textoHistoria;
-    width: 100%;
-    height: 400px;
     overflow: auto;
 }
 
@@ -212,17 +208,149 @@ ul.contactoFooterMq {
     grid-area: footer;
 }
 
-@media screen and (max-width:768px){
-    .contenedormq {      
+.contenedorPyA {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.4fr 1.9fr 0.4fr 1.9fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "headerMenuMq headerMenuMq headerMenuMq"
+        "tituloGotas tituloGotas tituloGotas"
+        "card1 card2 card3"
+        "tituloAcc tituloAcc tituloAcc"
+        "card4 card5 card6"
+        "footer footer footer";
+}
+
+.headerMenuMq {
+    grid-area: headerMenuMq;
+}
+
+.tituloGotas {
+    grid-area: tituloGotas;
+}
+
+.card1 {
+    grid-area: card1;
+    padding: 15px;
+}
+
+.card2 {
+    grid-area: card2;
+    padding: 15px;
+}
+
+.card3 {
+    grid-area: card3;
+    padding: 15px;
+}
+
+.tituloAcc {
+    grid-area: tituloAcc;
+}
+
+.card4 {
+    grid-area: card4;
+    padding: 15px;
+}
+
+.card5 {
+    grid-area: card5;
+    padding: 15px;
+}
+
+.card6 {
+    grid-area: card6;
+    padding: 15px;
+}
+.footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px) {
+    .contenedorPyA {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-auto-columns: 1fr;
-        gap:  5px;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "headerMenuMq headerMenuMq"
+            "tituloGotas tituloGotas"
+            "card1 card2" 
+            "card3 card3"
+            "tituloAcc tituloAcc"
+            "card4 card5"
+            "card6 card6"
+            "footer footer";
+    }
+}
+@media screen and (max-width:480px) {
+    .contenedorPyA {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "headerMenuMq"
+            "tituloGotas"
+            "card1" 
+            "card2" 
+            "card3"
+            "tituloAcc"
+            "card4"
+            "card5"
+            "card6"
+            "footer";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    .contenedorMq {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px;
         grid-auto-flow: wrap;
         grid-template-areas:
-            "headerMenu"
-            "fotoOptica"            
+            "headerMenuMq"
+            "fotoOptica"
             "textoHistoria"
             "footer";
+            .imgLoc {
+                width: 100vw;
+            }
+            .parrafoHistoria {
+                width: 100vw;                
+            }
+            
     }
 }
